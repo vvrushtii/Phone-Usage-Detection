@@ -1,0 +1,15 @@
+# Local (CPU) setup: install CPU torch first, then this file. See README.
+#   pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
+# On Colab, torch is already installed (CUDA build); the notebook installs this file on top.
+# Later phases add: TensorFlow/Keras (Phase 4), ONNX (Phase 7 only).
+ultralytics==8.4.190
+numpy==2.4.6
+pillow==12.3.0
+PyYAML==6.0.3
+opencv-python==5.0.0.93
+pandas==3.1.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pytest==9.1.1
+torchmetrics==1.9.0
+pycocotools==2.0.11

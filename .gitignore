@@ -1,0 +1,35 @@
+# Large / external artifacts (never commit)
+data/
+models/
+third_party/
+.venv/
+.venv-tf/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+runs/
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/public/models/*.onnx
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Weights anywhere
+*.pt
+*.onnx
+
+# Working notes, kept locally only
+CLAUDE.md
+docs/

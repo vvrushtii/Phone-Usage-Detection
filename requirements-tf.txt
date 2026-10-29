@@ -1,0 +1,9 @@
+# Only for ml/mobilenet_baseline.py (Phase 4, Part B). Install into its own environment, .venv-tf:
+#   py -3.11 -m venv .venv-tf
+#   .\.venv-tf\Scripts\python.exe -m pip install -r requirements-tf.txt
+tensorflow==2.21.0
+keras==3.15.1
+numpy==2.4.6
+pandas==3.1.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
