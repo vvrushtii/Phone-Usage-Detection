@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "cpu": "13th Gen Intel Core i7-13700HX",
+      "imgsz": 640,
+      "frame_size": [
+        1280,
+        720
+      ],
+      "frames_timed": 200,
+      "mean_ms": 26.519753499305807,
+      "median_ms": 26.455300001543947,
+      "p95_ms": 29.712660004588543,
+      "fps_mean": 37.707741138173716
+    },
+    {
+      "cpu": "13th Gen Intel Core i7-13700HX",
+      "imgsz": 480,
+      "frame_size": [
+        1280,
+        720
+      ],
+      "frames_timed": 200,
+      "mean_ms": 22.355044999494567,
+      "median_ms": 22.284999999101274,
+      "p95_ms": 24.49713500463986,
+      "fps_mean": 44.73263194158676
+    }
+  ]
+}

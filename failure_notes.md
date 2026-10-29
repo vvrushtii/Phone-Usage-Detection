@@ -1,0 +1,7 @@
+Written after looking at both grids (`failures_fp.png`, `failures_fn.png`).
+
+- **The two grids show the same kind of scene with opposite labels.** In the false-positive grid (label says "not using") many people are plainly holding a phone in front of them or looking at it. In the false-negative grid (label says "using") people hold a phone at hip height or beside them, much like the first group. The rules cannot separate what the labels separate, so some of these "mistakes" are probably label noise or a label definition we cannot see.
+- **A phone held low is the main rule miss.** Standing people checking a phone at waist height sit more than {{max_dy}} head-heights below the head centre, so ON_PHONE does not fire. Raising that limit fixes these but adds false positives, which is why tuning settled on {{max_dy}} head-heights.
+- **Seated people with the phone to the side are missed too.** The phone is level with the shoulder or desk and far to the side of the head, so it is neither "at the ear" nor "in front".
+- **Most missed "using" images have no phone detected at all ({{fn_no_phone}} of {{fn}}).** These are mostly small or partly hidden phones. The detector's small-phone mAP50 is {{det_size_small_ft}} against {{det_size_large_ft}} for large ones, so detection is the bigger limit, not the geometry.
+- **Crowded scenes confuse the head choice.** A phone close to a neighbour's head can be matched to the wrong person.

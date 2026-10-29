@@ -1,0 +1,218 @@
+{
+  "split": "held_out",
+  "images": 2855,
+  "methods": {
+    "A-coco": {
+      "thresholds": {
+        "phone_conf": 0.05
+      },
+      "confusion": {
+        "tp": 787,
+        "fp": 546,
+        "fn": 371,
+        "tn": 1151
+      },
+      "metrics": {
+        "accuracy": 0.6788091068301226,
+        "precision": 0.5903975993998499,
+        "recall": 0.6796200345423143,
+        "f1": 0.6318747490967482,
+        "specificity": 0.6782557454331173
+      },
+      "authors_calculate_metrics": {
+        "accuracy": 0.6788,
+        "precision": 0.5904,
+        "recall": 0.6796,
+        "sensitivity": 0.6796,
+        "specificity": 0.6783,
+        "f1": 0.6319
+      },
+      "max_gap_to_authors_script": 2.5250903251783363e-05,
+      "agrees_with_authors_script": true
+    },
+    "A-ft": {
+      "thresholds": {
+        "phone_conf": 0.3
+      },
+      "confusion": {
+        "tp": 1034,
+        "fp": 230,
+        "fn": 124,
+        "tn": 1467
+      },
+      "metrics": {
+        "accuracy": 0.8760070052539405,
+        "precision": 0.8180379746835443,
+        "recall": 0.8929188255613126,
+        "f1": 0.8538398018166804,
+        "specificity": 0.8644667059516794
+      },
+      "authors_calculate_metrics": {
+        "accuracy": 0.876,
+        "precision": 0.818,
+        "recall": 0.8929,
+        "sensitivity": 0.8929,
+        "specificity": 0.8645,
+        "f1": 0.8538
+      },
+      "max_gap_to_authors_script": 3.980181668039595e-05,
+      "agrees_with_authors_script": true
+    },
+    "A2-authors": {
+      "thresholds": {
+        "phone_conf": 0.2,
+        "head_conf": 0.1
+      },
+      "confusion": {
+        "tp": 1063,
+        "fp": 300,
+        "fn": 95,
+        "tn": 1397
+      },
+      "metrics": {
+        "accuracy": 0.861646234676007,
+        "precision": 0.7798972853998533,
+        "recall": 0.9179620034542314,
+        "f1": 0.843316144387148,
+        "specificity": 0.8232174425456689
+      },
+      "authors_calculate_metrics": {
+        "accuracy": 0.8616,
+        "precision": 0.7799,
+        "recall": 0.918,
+        "sensitivity": 0.918,
+        "specificity": 0.8232,
+        "f1": 0.8433
+      },
+      "max_gap_to_authors_script": 4.623467600695097e-05,
+      "agrees_with_authors_script": true
+    },
+    "B-rules": {
+      "thresholds": {
+        "version": 2,
+        "conf": {
+          "phone": 0.2,
+          "head": 0.1
+        },
+        "call": {
+          "head_expand": 0.1
+        },
+        "using": {
+          "max_dx_head_widths": 3.0,
+          "max_dy_head_heights": 2.0
+        },
+        "smoothing": {
+          "window_ms": 1500,
+          "enter_ratio": 0.6,
+          "away_ms": 3000
+        },
+        "app": {
+          "low_light_threshold": 29,
+          "enhance_method": "clahe_smooth",
+          "enhance_params": {
+            "clip_limit": 2.0,
+            "tile_grid": [
+              8,
+              8
+            ],
+            "smooth_ksize": 3
+          },
+          "imgsz": 640
+        }
+      },
+      "confusion": {
+        "tp": 1042,
+        "fp": 246,
+        "fn": 116,
+        "tn": 1451
+      },
+      "metrics": {
+        "accuracy": 0.8732049036777583,
+        "precision": 0.8090062111801242,
+        "recall": 0.8998272884283247,
+        "f1": 0.8520032706459526,
+        "specificity": 0.8550383028874484
+      },
+      "authors_calculate_metrics": {
+        "accuracy": 0.8732,
+        "precision": 0.809,
+        "recall": 0.8998,
+        "sensitivity": 0.8998,
+        "specificity": 0.855,
+        "f1": 0.852
+      },
+      "max_gap_to_authors_script": 2.7288428324667713e-05,
+      "agrees_with_authors_script": true
+    },
+    "C-mobilenet": {
+      "thresholds": {
+        "threshold": 0.5
+      },
+      "confusion": {
+        "tp": 906,
+        "fp": 502,
+        "fn": 252,
+        "tn": 1195
+      },
+      "metrics": {
+        "accuracy": 0.7359019264448337,
+        "precision": 0.6434659090909091,
+        "recall": 0.7823834196891192,
+        "f1": 0.7061574434918161,
+        "specificity": 0.7041838538597525
+      },
+      "authors_calculate_metrics": {
+        "accuracy": 0.7359,
+        "precision": 0.6435,
+        "recall": 0.7824,
+        "sensitivity": 0.7824,
+        "specificity": 0.7042,
+        "f1": 0.7062
+      },
+      "max_gap_to_authors_script": 4.255650818396628e-05,
+      "agrees_with_authors_script": true
+    }
+  },
+  "failures": {
+    "false_positives": 246,
+    "false_negatives": 116,
+    "false_positive_by_state": {
+      "ON_CALL": 95,
+      "ON_PHONE": 151
+    },
+    "false_negative_by_cause": {
+      "no phone detected": 93,
+      "head and phone found, rules say not using": 21,
+      "phone found, no head detected": 2
+    },
+    "grid_ranking": "false positives: confidence of the phone that triggered 'using'; false negatives: confidence of the most confident phone detected (0 if none)",
+    "fp_grid_images": [
+      "qSOYGtJN2zid69vUhMIW3lfsK8yB4F7c.jpg",
+      "aUv1mVfe73tAg42HQSPoD8sLhFIT0XiN.jpg",
+      "xeaEKC64cwoVyp8QUDGA5BLYmu7btOF3.jpg",
+      "ODQr5iYWESxBVnFkTNt0Ke3Z7pHdahgC.jpg",
+      "VvriH5DXzLITxn8ykdSEQbsaPhtl19Bj.jpg",
+      "O15nIAMPFpyozEid2kHUDQVSGL3aRZqC.jpg",
+      "4mZRJKr8W9z35XueqYFsBGVECSxobf07.jpg",
+      "6OQTgwsaANcFp7CqLxY0d3GRtvMV5HKS.jpg",
+      "2M4xFZqCbQcz3XBi8LS6gnWjVGKYflmy.jpg",
+      "obCzyuMYgnZK1h3kGeJvBjl27xWHcItA.jpg",
+      "Ok0Xe7LTQ2lU9mtYyMSnGqRx8PJu53sf.jpg",
+      "Ww2qocE3V6QPSOLNvarhB90tHXfRTZCd.jpg"
+    ],
+    "fn_grid_images": [
+      "6yFTsJmcB72ULvuaDZN9GHb4n8pWQogi.jpg",
+      "oVB1m5IkExJ4H3UuYtOdPWApc8KsL6gr.jpg",
+      "uWXGi5OlPkpd8EH3KfLasZRzwAjM9CvT.jpg",
+      "4lCIA5hsrUSNEcuqWGMXzm3FtvHLdbjk.jpg",
+      "qEvTJmr8SxBPugbcak5e0LwKdYiOo9G3.jpg",
+      "yBNo05p2hGLEXUTql8swJj6YrAzixaVk.jpg",
+      "tAYG9R3bqgFBw1jodLN0JTushvaEHQ8O.jpg",
+      "mn5JwbShYFE8p7tKQguCGo3MvrxszRU1.jpg",
+      "5phkcPqdXeRAgxul9LFi0VIMZYjUJ6sS.jpg",
+      "YgDunVqCG3zPFX5k0cWZifyQ9NRjHmdr.jpg",
+      "LGCrVelWhxA1Yu9oZUwXP23Nkdzta0cD.jpg",
+      "guQza7k20WrSO69hNeL1bUAXnmMEC5vo.jpg"
+    ]
+  }
+}

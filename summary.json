@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "tune_fraction": 0.3,
+  "stratified_by": [
+    "split",
+    "using_phone"
+  ],
+  "tune": {
+    "images": 1224,
+    "using_phone": 496,
+    "using_rate": 0.4052,
+    "from_val": 519,
+    "from_test": 705
+  },
+  "held_out": {
+    "images": 2855,
+    "using_phone": 1158,
+    "using_rate": 0.4056,
+    "from_val": 1211,
+    "from_test": 1644
+  }
+}

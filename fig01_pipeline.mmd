@@ -1,0 +1,8 @@
+flowchart LR
+  A[Webcam - OpenCV] --> B[Brightness check]
+  B --> C[CLAHE + blur, only if dark]
+  C --> D[YOLO26n: head + phone]
+  D --> E[Rules: ON_CALL / ON_PHONE / FOCUSED]
+  E --> F[Time smoothing]
+  F --> G[Events]
+  G --> H[Session report]

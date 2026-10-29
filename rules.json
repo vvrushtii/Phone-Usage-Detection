@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "conf": {
+    "phone": 0.2,
+    "head": 0.1
+  },
+  "call": {
+    "head_expand": 0.1
+  },
+  "using": {
+    "max_dx_head_widths": 3.0,
+    "max_dy_head_heights": 2.0
+  },
+  "smoothing": {
+    "window_ms": 1500,
+    "enter_ratio": 0.6,
+    "away_ms": 3000
+  },
+  "app": {
+    "low_light_threshold": 29,
+    "enhance_method": "clahe_smooth",
+    "enhance_params": {
+      "clip_limit": 2.0,
+      "tile_grid": [
+        8,
+        8
+      ],
+      "smooth_ksize": 3
+    },
+    "imgsz": 640,
+    "phone_conf": 0.15
+  }
+}

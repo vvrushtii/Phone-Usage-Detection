@@ -1,0 +1,168 @@
+{
+  "train": {
+    "images": 18800,
+    "boxes": {
+      "head": 24991,
+      "phone": 8566
+    },
+    "images_without_boxes": 48,
+    "images_with_phone": 8358,
+    "images_with_head": 18741,
+    "images_with_both": 8347,
+    "boxes_per_image_max": 37,
+    "relative_box_area": {
+      "phone": {
+        "min": 0.0012210000000000007,
+        "p05": 0.008487352743091208,
+        "median": 0.018655339508799794,
+        "p95": 0.05146842146273933,
+        "max": 0.4891213354781524
+      },
+      "head": {
+        "min": 6.000000000000011e-05,
+        "p05": 0.008360132603539499,
+        "median": 0.05651828670185436,
+        "p95": 0.17187360000000002,
+        "max": 0.9192361111111111
+      }
+    },
+    "image_width_px": {
+      "min": 63.0,
+      "p05": 115.0,
+      "median": 280.0,
+      "p95": 493.0,
+      "max": 1958.0
+    },
+    "image_height_px": {
+      "min": 94.0,
+      "p05": 228.0,
+      "median": 582.0,
+      "p95": 831.0,
+      "max": 2784.0
+    }
+  },
+  "val": {
+    "images": 1730,
+    "boxes": {
+      "head": 1318,
+      "phone": 809
+    },
+    "images_without_boxes": 387,
+    "images_with_phone": 795,
+    "images_with_head": 991,
+    "images_with_both": 443,
+    "boxes_per_image_max": 11,
+    "relative_box_area": {
+      "phone": {
+        "min": 0.0017280000000000017,
+        "p05": 0.006028000000000003,
+        "median": 0.013244000000000004,
+        "p95": 0.0382475,
+        "max": 0.18078
+      },
+      "head": {
+        "min": 0.0001170000000000002,
+        "p05": 0.008058499999999994,
+        "median": 0.04951799999999999,
+        "p95": 0.18366085,
+        "max": 0.60771
+      }
+    },
+    "image_width_px": {
+      "min": 70.0,
+      "p05": 103.0,
+      "median": 250.0,
+      "p95": 505.45,
+      "max": 1427.0
+    },
+    "image_height_px": {
+      "min": 104.0,
+      "p05": 183.55,
+      "median": 500.0,
+      "p95": 911.9,
+      "max": 1606.0
+    }
+  },
+  "test": {
+    "images": 2349,
+    "boxes": {
+      "head": 2967,
+      "phone": 1132
+    },
+    "images_without_boxes": 25,
+    "images_with_phone": 1102,
+    "images_with_head": 2320,
+    "images_with_both": 1098,
+    "boxes_per_image_max": 10,
+    "relative_box_area": {
+      "phone": {
+        "min": 0.0010865,
+        "p05": 0.0055317,
+        "median": 0.013481000000000003,
+        "p95": 0.04422000000000001,
+        "max": 0.18787350000000003
+      },
+      "head": {
+        "min": 0.0001120000000000002,
+        "p05": 0.009770799999999998,
+        "median": 0.04929,
+        "p95": 0.17260140000000007,
+        "max": 0.7089599999999999
+      }
+    },
+    "image_width_px": {
+      "min": 54.0,
+      "p05": 104.0,
+      "median": 241.0,
+      "p95": 487.0,
+      "max": 1242.0
+    },
+    "image_height_px": {
+      "min": 107.0,
+      "p05": 184.0,
+      "median": 488.0,
+      "p95": 843.0,
+      "max": 1683.0
+    }
+  },
+  "label_cleaning": {
+    "files_with_joined_boxes_on_one_line": 242,
+    "boxes_clipped_to_image": 1122,
+    "boxes_dropped_degenerate": 4,
+    "files_changed": 1033,
+    "dropped_details": [
+      "dropped train/DWHAVLfUgQJRo39TC6SvdEx7BX1KMYa0.txt: ['1', '0.328', '0.004', '0.003', '0.001']",
+      "dropped train/IfMo6wGUN92gEKencaux0Hz75OAvilyV.txt: ['1', '-0.892', '0.035', '0.0', '0.0']",
+      "dropped train/sDwiOkX4dMIm167E3tlWuhZYNenG5apb.txt: ['0', '0.582', '0.949', '0.006', '0.0']",
+      "dropped test/ImKXv7x1jqirs6yhB3H4NanE5RSblMdG.txt: ['1', '-0.849', '0.015', '0.0', '0.0']"
+    ]
+  },
+  "usage_labels": {
+    "using_phone_label_value": 1,
+    "phone_box_rate_per_label_csv_class": {
+      "0": 0.11835051546391752,
+      "1": 0.973397823458283
+    },
+    "by_split": {
+      "val": {
+        "using=0 phone_box=False head_box=False": 383,
+        "using=0 phone_box=False head_box=True": 532,
+        "using=0 phone_box=True head_box=False": 60,
+        "using=0 phone_box=True head_box=True": 64,
+        "using=1 phone_box=False head_box=False": 4,
+        "using=1 phone_box=False head_box=True": 16,
+        "using=1 phone_box=True head_box=False": 292,
+        "using=1 phone_box=True head_box=True": 379
+      },
+      "test": {
+        "using=0 phone_box=False head_box=False": 25,
+        "using=0 phone_box=False head_box=True": 1198,
+        "using=0 phone_box=True head_box=False": 2,
+        "using=0 phone_box=True head_box=True": 161,
+        "using=1 phone_box=False head_box=True": 24,
+        "using=1 phone_box=True head_box=False": 2,
+        "using=1 phone_box=True head_box=True": 937
+      }
+    }
+  }
+}

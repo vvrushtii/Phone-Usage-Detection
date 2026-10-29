@@ -1,0 +1,44 @@
+{
+  "split": "tune",
+  "images": 1224,
+  "objective": "F1 of 'using phone'",
+  "best": {
+    "conf.phone": 0.2,
+    "conf.head": 0.1,
+    "call.head_expand": 0.1,
+    "using.max_dx_head_widths": 3.0,
+    "using.max_dy_head_heights": 2.0,
+    "tp": 449.0,
+    "fp": 115.0,
+    "fn": 47.0,
+    "tn": 613.0,
+    "accuracy": 0.8676470588235294,
+    "precision": 0.7960992907801419,
+    "recall": 0.905241935483871,
+    "f1": 0.8471698113207548,
+    "specificity": 0.842032967032967
+  },
+  "influence_f1_spread": {
+    "conf.phone": 0.034318324642629405,
+    "conf.head": 0.024586229149661465,
+    "call.head_expand": 0.010265723148356942,
+    "using.max_dx_head_widths": 0.005268583766230961,
+    "using.max_dy_head_heights": 0.224466294463047
+  },
+  "plotted_parameters": [
+    "using.max_dy_head_heights",
+    "conf.phone"
+  ],
+  "baselines": {
+    "A-ft": {
+      "phone_conf": 0.3,
+      "tune_f1": 0.8428158148505304,
+      "tune_accuracy": 0.8668300653594772
+    },
+    "A-coco": {
+      "phone_conf": 0.05,
+      "tune_f1": 0.659675881792183,
+      "tune_accuracy": 0.7083333333333334
+    }
+  }
+}
